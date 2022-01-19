@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "name": "multi-domain-nextjs",
+  "description": "Multi Domain Nextjs",
+  "author": {
+    "name": "Polysharp",
+    "email": "support@polysharp.fr",
+    "url": "https://polysharp.fr"
+  },
+  "homepage": ".",
+  "repository": "https://github.com/polysharp/multi-domain-nextjs.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint-staged": "lint-staged",
+    "lint": "eslint ./src",
+    "chore:check": "npm outdated",
+    "chore:update": "npx npm-check-updates -u && npm install"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^5.4.5",
+    "next": "^12.0.7",
+    "next-images": "^1.8.4",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^15.0.0",
+    "autoprefixer": "^10.4.0",
+    "babel-eslint": "^10.1.0",
+    "commitlint": "^12.1.4",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.45.0",
+    "tailwindcss": "^3.0.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "npm run lint"
+  }
+}
